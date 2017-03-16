@@ -1,0 +1,229 @@
+//@import "normalize.scss";
+//@import "layout.scss";
+
+
+
+
+.main__section--our-service {
+  //min-height: 735px;
+  h2 {
+    /* Style for "our servic" */
+    @include h2;
+
+  }
+  hr {
+    /* Style for "Line sep" */
+    @include hr;
+    margin: 0 auto 60px;
+    text-align: center;
+  }
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 1150px;
+    margin: auto;
+    div {
+      padding: 20px;
+      max-width: 333px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+      color: #222222;
+      font-family: Lato, sans-serif;
+      font-weight: 400;
+      text-align: center;
+      h5 {
+        font-size: 24px;
+        line-height: 24px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 30px;
+
+      }
+    }
+  }
+}
+
+//--------------------------------------------end our service
+.main__section--about-us {
+  background: url("../images/-img-.png") 50% no-repeat, #222222;
+  background-size: cover;
+  min-height: 500px;
+
+  &-border {
+    max-width: 1080px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 0 50px;
+  }
+}
+
+.left {
+  padding-top: 170px;
+  h1 {
+    // Style for "dolore mag"
+    max-width: 560px;
+    color: #ffffff;
+    font-family: Lato, sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 0.6px;
+    display: block;
+  }
+  p {
+    /* Style for "Lorem ipsu" */
+    max-width: 516px;
+    min-height: 78px;
+    color: #ffffff;
+    font-family: Lato, sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 28px;
+    margin-bottom: 70px;
+  }
+  a {
+    /* Style for "more" */
+    width: 42px;
+    height: 13px;
+    color: #ffffff;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: underline;
+    &:hover{
+      color: #676767;
+
+    }
+  }
+}
+
+.right {
+  padding-top: 75px;
+  display: flex;
+  justify-content: center;
+  justify-items: end;
+  flex-grow: 1;
+
+  img {
+    // Style for "Layer 15"
+    width: 257px;
+    height: 425px;
+
+  }
+}
+
+//--------------------------------------------end dolore
+.main__section--our-work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  h2 {
+    @include h2;
+  }
+  hr {
+    @include hr;
+    margin-bottom: 75px;
+  }
+}
+
+.our-work__conteiner {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.our-work__card {
+  // Style for "Layer 16"
+  background-color: #222222;
+  width: 370px;
+  height: 420px;
+  position: relative;
+  margin: 15px;
+  z-index: 1;
+  a {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+.title__hidden {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  p {
+    position: relative;
+    display: block;
+    // Style for "kinderen p"
+    color: #ffffff;
+    font-family: Lato, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+  .title__logo {
+    /* Style for "Link 1. At" */
+    width: 41px;
+    height: 41px;
+    opacity: 0.9;
+    position: relative;
+  }
+}
+
+.our-work__card:hover .fon {
+  opacity: 0.3;
+  transition: opacity .2s ease-in;
+}
+
+.our-work__card > a:hover .title__hidden {
+  visibility: visible;
+  transition: visibility .2s ease-in;
+}
+
+.main__section--our-work button {
+  /* Style for "Rectangle" */
+  width: 370px;
+  height: 60px;
+  border: 3px solid #222222;
+  margin: 79px auto 0;
+  margin-bottom: 80px;
+  background-color: white;
+  /* Style for "more" */
+  color: #222222;
+  font-family: Lato, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  &:hover{
+    border: 3px solid #676767;
+    color: #676767;
+
+  }
+}
+
+//--------------------------------------end our work

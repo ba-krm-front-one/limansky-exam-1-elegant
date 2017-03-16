@@ -1,0 +1,415 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeue Light.ttf");
+  font-weight: 100; }
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeue Regular.otf");
+  font-weight: 400; }
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeue Bold.otf");
+  font-weight: 700; }
+body {
+  min-width: 320px; }
+
+.header-elegant {
+  background: url("../images/hero-img.png") 50% no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh; }
+
+.header-elegant__container {
+  padding: 0;
+  padding-bottom: 45px; }
+  .header-elegant__container-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto; }
+    .header-elegant__container-header .logo {
+      background: url("../images/logo.png") 50% no-repeat;
+      /* Style for "Logo" */
+      width: 109px;
+      height: 18px;
+      display: block;
+      margin-top: 50px; }
+
+nav ul {
+  list-style-type: none;
+  margin-top: 45px; }
+  nav ul li {
+    float: left;
+    padding-right: 50px;
+    display: block;
+    height: auto; }
+    nav ul li a {
+      text-decoration: none;
+      /* Style for "HELLO SERV" */
+      color: #fffefe;
+      font-family: Lato, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 38px;
+      text-transform: uppercase;
+      padding: 0 0 10px 0;
+      display: block;
+      position: relative; }
+      nav ul li a:before {
+        display: block;
+        background-color: #fffefe;
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        height: 3px;
+        opacity: 0;
+        transform: translateX(-20px);
+        transition: transform .2s ease-in, opacity .2s ease-in; }
+      nav ul li a:hover:before {
+        opacity: 1;
+        transform: translateY(0); }
+  nav ul li:last-of-type {
+    padding-right: 83px; }
+
+.header-elegant__ba-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 190px; }
+  .header-elegant__ba-banner h1 {
+    /* Style for "weтАЩre crea" */
+    min-height: 37px;
+    color: #ffffff;
+    font-family: Raleway, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-align: center; }
+  .header-elegant__ba-banner hr {
+    /* Style for "Shape 1" */
+    width: 86px;
+    height: 2px;
+    background-color: #ffffff; }
+  .header-elegant__ba-banner p {
+    /* Style for "Lorem ipsu" */
+    max-width: 596px;
+    min-height: 50px;
+    color: #fffefe;
+    font-family: Lato, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center; }
+
+header .scroll {
+  /* Style for "Right Arro" */
+  width: 92px;
+  height: 92px;
+  background: url("../images/right-arrow-circular-button--attribute-as-robin-kylander-from-flaticon-com.svg") 50% no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  margin: 200px auto 0;
+  display: block;
+  position: relative; }
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); } }
+header .scroll:hover {
+  animation: bounce 1s;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px; }
+
+.main__section--our-service h2 {
+  /* Style for "our servic" */
+  color: #222222;
+  font-family: Raleway, sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 100px auto 65px; }
+.main__section--our-service hr {
+  /* Style for "Line sep" */
+  width: 86px;
+  height: 2px;
+  background-color: #222222;
+  margin: 0 auto 60px;
+  text-align: center; }
+.main__section--our-service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 1150px;
+  margin: auto; }
+  .main__section--our-service-container div {
+    padding: 20px;
+    max-width: 333px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    color: #222222;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    text-align: center; }
+    .main__section--our-service-container div h5 {
+      font-size: 24px;
+      line-height: 24px; }
+    .main__section--our-service-container div p {
+      font-size: 16px;
+      line-height: 30px; }
+
+.main__section--about-us {
+  background: url("../images/-img-.png") 50% no-repeat, #222222;
+  background-size: cover;
+  min-height: 500px; }
+  .main__section--about-us-border {
+    max-width: 1080px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 0 50px; }
+
+.left {
+  padding-top: 170px; }
+  .left h1 {
+    max-width: 560px;
+    color: #ffffff;
+    font-family: Lato, sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 0.6px;
+    display: block; }
+  .left p {
+    /* Style for "Lorem ipsu" */
+    max-width: 516px;
+    min-height: 78px;
+    color: #ffffff;
+    font-family: Lato, sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 28px;
+    margin-bottom: 70px; }
+  .left a {
+    /* Style for "more" */
+    width: 42px;
+    height: 13px;
+    color: #ffffff;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: underline; }
+    .left a:hover {
+      color: #676767; }
+
+.right {
+  padding-top: 75px;
+  display: flex;
+  justify-content: center;
+  justify-items: end;
+  flex-grow: 1; }
+  .right img {
+    width: 257px;
+    height: 425px; }
+
+.main__section--our-work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto; }
+  .main__section--our-work h2 {
+    color: #222222;
+    font-family: Raleway, sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 100px auto 65px; }
+  .main__section--our-work hr {
+    width: 86px;
+    height: 2px;
+    background-color: #222222;
+    margin-bottom: 75px; }
+
+.our-work__conteiner {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap; }
+
+.our-work__card {
+  background-color: #222222;
+  width: 370px;
+  height: 420px;
+  position: relative;
+  margin: 15px;
+  z-index: 1; }
+  .our-work__card a {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1; }
+
+.title__hidden {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto; }
+  .title__hidden p {
+    position: relative;
+    display: block;
+    color: #ffffff;
+    font-family: Lato, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: uppercase; }
+  .title__hidden .title__logo {
+    /* Style for "Link 1. At" */
+    width: 41px;
+    height: 41px;
+    opacity: 0.9;
+    position: relative; }
+
+.our-work__card:hover .fon {
+  opacity: 0.3;
+  transition: opacity .2s ease-in; }
+
+.our-work__card > a:hover .title__hidden {
+  visibility: visible;
+  transition: visibility .2s ease-in; }
+
+.main__section--our-work button {
+  /* Style for "Rectangle" */
+  width: 370px;
+  height: 60px;
+  border: 3px solid #222222;
+  margin: 79px auto 0;
+  margin-bottom: 80px;
+  background-color: white;
+  /* Style for "more" */
+  color: #222222;
+  font-family: Lato, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1.7px; }
+  .main__section--our-work button:hover {
+    border: 3px solid #676767;
+    color: #676767; }
+
+footer {
+  /* Style for "bg" */
+  background: url("../images/bg-footer.png") 50% no-repeat;
+  min-height: 802px;
+  background-size: cover;
+  padding: 100px 30px 0;
+  text-align: center; }
+
+.footer__container h2 {
+  color: #222222;
+  font-family: Raleway, sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 100px auto 65px;
+  color: #ffffff;
+  margin-top: 0; }
+.footer__container hr {
+  width: 86px;
+  height: 2px;
+  background-color: #ffffff; }
+
+.footer__social {
+  margin: 70px auto;
+  padding: 0;
+  text-align: center;
+  list-style: none; }
+  .footer__social li {
+    display: inline-block;
+    margin-left: 30px; }
+
+.footer__social li:hover {
+  transform: scale(1.2, 1.2); }
+
+.footer__social li:first-of-type {
+  margin-left: 0; }
+
+.footer__form {
+  max-width: 730px;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .footer__form label {
+    padding: 0 31px;
+    flex-grow: 1;
+    display: flex;
+    margin-bottom: 50px; }
+    .footer__form label input {
+      background: none;
+      border: none;
+      border-bottom: 2px solid #afafaf;
+      padding-left: 28px;
+      color: #676767;
+      font-family: "Lato", sans-serif;
+      font-size: 18px;
+      font-weight: 200;
+      font-style: italic;
+      line-height: 40px;
+      flex-grow: 1;
+      outline: none; }
+
+.footer__button-submit {
+  width: 183px;
+  height: 60px;
+  border: 3px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: Lato, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 50px auto;
+  text-align: center;
+  letter-spacing: 1.5px; }
+  .footer__button-submit:hover {
+    border: 3px solid #676767;
+    color: #676767; }
+
+/*# sourceMappingURL=style.css.map */

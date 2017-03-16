@@ -1,0 +1,24 @@
+@mixin hr{
+  // Style for "Line sep"
+  width: 86px;
+  height: 2px;
+  background-color: #222222;
+}
+@mixin hr-white{
+  // Style for "Line sep"
+  width: 86px;
+  height: 2px;
+  background-color: #ffffff;
+}
+@mixin h2{
+  // Style for "our work"
+
+  color: #222222;
+  font-family: Raleway, sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 100px auto 65px;
+}

@@ -1,0 +1,29 @@
+@import "variables.scss";
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeue Light.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeue Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeue Bold.otf");
+  font-weight: 700;
+}
+
+body {
+  min-width: 320px;
+
+}
+
+@import "header";
+@import "main";
+@import "footer";
+
